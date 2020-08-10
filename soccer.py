@@ -35,7 +35,7 @@ def functionstuff(s):
             
 
     else:
-        print("Invalid Input! Don Donnn Donnnnnnnn!!!!")
+        print("Invalid Input! Try Again!!!!")
         
 
 def functionlistsoccer():
