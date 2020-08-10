@@ -9,10 +9,8 @@ z = 100
 s = 50
 run = True
 herhtf = 52
-g = 5
 while run:
     pygame.time.delay(500)
-    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
@@ -24,17 +22,10 @@ while run:
     if pressingkeycont[pygame.K_DOWN]:
         y+= vel
     if pressingkeycont[pygame.K_UP]:
-        y-= vel
-
-    screenbiggo.fill((51, 223, 255))
-         
+        y-= vel 
+    screenbiggo.fill((51, 223, 255))     
     pygame.draw.circle(screenbiggo, (100, 50, 31), (x, y), 100)
-    
-
-    
-    
     pygame.display.update()
-    
 pygame.quit()
     
 
