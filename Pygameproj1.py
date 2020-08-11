@@ -25,6 +25,21 @@ while run:
         y-= vel 
     screenbiggo.fill((51, 223, 255))     
     pygame.draw.circle(screenbiggo, (100, 50, 31), (x, y), 100)
+    pygame.draw.line(screenbiggo, (100, 0, 255), (0, 10), (300, 10), 10)
+    all_sprites = pygame.sprite.Group()
+    all_sprites.update()
+    class Player(pygame.sprite.Sprite):
+        def __init__(self):
+            pygame.sprite.Sprite.__init__(self)
+            self.image = pygame.Surface((50, 50))
+            self.image.fill(YELLOW)
+            self.rect = self.image.get_rect()
+            self.rect.center = (WIDTH / 2, HEIGHT / 2)
+    all_sprites = pygame.sprite.Group()
+    player = Player()
+    all_sprites.add(player)
+    
+    all_sprites.draw(screen)
     pygame.display.update()
 pygame.quit()
     
