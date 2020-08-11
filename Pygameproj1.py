@@ -31,10 +31,10 @@ while run:
     class Player(pygame.sprite.Sprite):
         def __init__(self):
             pygame.sprite.Sprite.__init__(self)
-            self.image = pygame.Surface((50, 50))
-            self.image.fill(YELLOW)
-            self.rect = self.image.get_rect()
-            self.rect.center = (WIDTH / 2, HEIGHT / 2)
+        self.image = pygame.Surface((50, 50))
+        self.image.fill(YELLOW)
+        self.rect = self.image.get_rect()
+        self.rect.center = (WIDTH / 2, HEIGHT / 2)
     all_sprites = pygame.sprite.Group()
     player = Player()
     all_sprites.add(player)
