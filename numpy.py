@@ -1,30 +1,11 @@
-def funct():
-    global x
-    x = []
-    if x[1] == "h" or x[1] == "H":
-      Suit = " of Hearts"
-      number()
-    elif x[1] == "c" or x[1] == "C":
-      Suit = " of Clubs"
-      number()
-    elif x[1] == "D" or x[1] == "d":
-      Suit = " of Diamonds"
-      number()
-    elif x[1] == "S" or "s":
-      Suit = " of Spades"
-      number()
-    funct()
-def number():
-  y = range(1, 10)
-  if x in y:
-    f = "Your card is {}" + Suit
-    print(f.format(x))
-funct()
+x = 0
 
-
-
-    
-
-      
-
-
+def funct(x):
+  factorialheho = 1
+  g = 0
+  f = int(input("Give a number to me. "))
+  for z in range (1, f + 1):
+    factorialheho = factorialheho + z
+  print(factorialheho)
+  funct(x)
+funct(x)
