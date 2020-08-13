@@ -1,14 +1,17 @@
 def funct():
-    x = int(input("Type in a integer!"))
+    x = input("Type in a color. r for red, g for green, and b for blue.")
+    x.upper()
     print(x)
-    if (x % 2) == 0:
-        print("Your integer is even.")
-    else:
-        print("Your integer is odd.")
-    y = str(input("Play Again? Print y for yes or n for no"))
-    if y == "y":
+    if x == "R":
+        print("Your color is red.")
         funct()
-    if y == "n":
-        exit() 
-funct()      
-        
+    elif x == "B":
+        print("Your color is blue.")
+        funct()
+    elif x == "G":
+        print("Your color is green.")
+        funct()
+    else:
+        print("Invalid input! Try again!")
+        funct()
+funct()
