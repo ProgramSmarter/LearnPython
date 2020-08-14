@@ -1,11 +1,18 @@
-x = 0
 
-def funct(x):
-  factorialheho = 1
-  g = 0
-  f = int(input("Give a number to me. "))
-  for z in range (1, f + 1):
-    factorialheho = factorialheho + z
-  print(factorialheho)
-  funct(x)
-funct(x)
+def funct():
+  x = int(input("Give me how many numbers you want to multiply."))
+  list = []
+  y = 0
+  while y < x:
+    list.append(int(input("Type in a number. ")))
+    y += 1
+  y = 1
+  for z in list:
+    y *= z
+  print(y)
+  funct()
+      
+
+    
+  
+funct()
