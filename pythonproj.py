@@ -20,7 +20,7 @@ def all():
                 all()
             else:
                 pass
-            if (list2[0] and list2[1] and list2[2] == "X") or (list2[3] and list2[4] and list2[5] == "X") or (list2[6] and list2[7] and list2[8] == "X") or (list2[0] and list2[3] and list2[6] == "X") or (list2[1] and list2[4] and list2[7] == "X") or (list2[2] and list2[5] and list2[8] == "X") or (list2[0] and list2[4] and list2[8] == "X") or (list2[2] and list2[4] and list2[6] == "X") or ():
+            if (list2[0] and list2[1] and list2[2] == "X") or (list2[3] and list2[4] and list2[5] == "X") or (list2[6] and list2[7] and list2[8] == "X") or (list2[0] and list2[3] and list2[6] == "X") or (list2[1] and list2[4] and list2[7] == "X") or (list2[2] and list2[5] and list2[8] == "X") or (list2[0] and list2[4] and list2[8] == "X") or (list2[2] and list2[4] and list2[6] == "X"):
                 print("You have lost! :(")
                 all()
             else:    
