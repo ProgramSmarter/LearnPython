@@ -1,2 +1,2 @@
 def funct():
-    x = str(input("Give me a full name.")) 
+    x = str(input("Give me a full name."))
