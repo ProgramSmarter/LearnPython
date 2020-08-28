@@ -1,6 +1,4 @@
 import random
-import pygame
-
 def all():
     list2 = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
     list = [0, 1, 2, 3, 4, 5, 6, 7, 8]
@@ -20,7 +18,7 @@ def all():
             if (list2[0] and list2[1] and list2[2] == "O" == True) or (list2[3] and list2[4] and list2[5] == "O" == True) or (list2[6] and list2[7] and list2[8] == "O" == True) or (list2[0] and list2[3] and list2[6] == "O" == True) or (list2[1] and list2[4] and list2[7] == "O" == True) or (list2[2] and list2[5] and list2[8] == "O" == True) or (list2[0] and list2[4] and list2[8] == "O" == True) or (list2[2] and list2[4] and list2[6] == "O" == True):
                 print("You have won! :)")
                 all()
-            elif (list2[0] and list2[1] and list2[2] == "X" == True) or (list2[3] and list2[4] and list2[5] == "X" == True) or (list2[6] and list2[7] and list2[8] == "X" == True) or (list2[0] and list2[3] and list2[6] == "X" == True) or (list2[1] and list2[4] and list2[7] == "X" == True) or (list2[2] and list2[5] and list2[8] == "X" == True) or (list2[0] and list2[4] and list2[8] == "X" == True) or (list2[2] and list2[4] and list2[6] == "X" == True):
+            if (list2[0] and list2[1] and list2[2] == "X" == True) or (list2[3] and list2[4] and list2[5] == "X" == True) or (list2[6] and list2[7] and list2[8] == "X" == True) or (list2[0] and list2[3] and list2[6] == "X" == True) or (list2[1] and list2[4] and list2[7] == "X" == True) or (list2[2] and list2[5] and list2[8] == "X" == True) or (list2[0] and list2[4] and list2[8] == "X" == True) or (list2[2] and list2[4] and list2[6] == "X" == True):
                 print("You have lost! :(")
                 all()
             else:    
