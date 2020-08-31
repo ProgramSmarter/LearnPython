@@ -19,4 +19,3 @@ if y < z < x:
 if z < x < y:
     glob = ("The median of your three numbers is {}.")
     print(glob.format(z))
-
