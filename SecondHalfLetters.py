@@ -1,4 +1,6 @@
-import numpy as np
-arr = np.array([1, 2, 3, 4, 5])
-print(arr)
-
+import kivy
+from kivy.app import App
+from kivy.uix.label import Label
+class MyFirstKivyApp(App):
+    def build(self):
+        return Label(text ="Hello World !")
